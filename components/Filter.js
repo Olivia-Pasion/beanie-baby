@@ -7,11 +7,10 @@ export default function createFilter(form, { handleFilter }) {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         const formData = new FormData(form);
-
         handleFilter(
             { 
                 title: formData.get('title'), 
-                astroSign: formData.get('astroSign') 
+                astroSign: formData.get('astro-sign') 
             });
 
     });

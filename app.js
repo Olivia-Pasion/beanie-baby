@@ -22,7 +22,7 @@ async function handlePageLoad() {
     title = params.get('title') || '';
     astroSign = params.get('astroSign') || '';
     page = Number(params.get('page')) || 1;
-    //pageSize = Number(params.get('pageSize')) || 10;
+    pageSize;
 
     const start = (page - 1) * pageSize;
     const end = (page * pageSize) - 1;
@@ -53,6 +53,7 @@ function handlePaging(change) {
 
     page = Math.max(1, page + change);
     params.set('page', page);
+    pageSize;
     window.location.search = params.toString();
 }
 
