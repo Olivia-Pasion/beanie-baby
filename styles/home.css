@@ -7,3 +7,28 @@
     gap: 20px;
 }
 
+
+
+
+.beanie-card {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 1px pink;
+    background: white;
+    
+    display: grid;
+    justify-items: center;
+    align-items: center;   
+}
+
+
+.beanie-card a {
+    display: contents;
+    color: initial;
+}
+
+.beanie-card img {
+    width: 45%;
+    object-fit: contain;
+}
