@@ -1,13 +1,15 @@
 :root {
-    --background: rgb(224, 234, 247);
-    --header-background: white;
-    --footer-background: rgb(243, 242, 242);
+    --header-background: rgb(238,174,202);
+    --footer-background: rgb(238,174,202);
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 body {
     height: 100%;
     padding-bottom: 30px;
     font-family: 'Rubik', san-serif;
+    
 }
 
 header {

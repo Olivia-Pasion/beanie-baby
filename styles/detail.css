@@ -1,0 +1,14 @@
+
+#beanie-detail {
+    margin: 0 auto;
+    
+    padding: 30px;
+
+    display: grid;
+    grid-template-rows: 300px auto auto;
+}
+
+#beanie-detail img {
+    width: 10px;
+    
+}

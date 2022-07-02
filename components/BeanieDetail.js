@@ -25,6 +25,7 @@ export default function createBeanieDetail(root) {
         astroSign.textContent = beanie.astroSign;
         color.textContent = beanie.color;
         title.textContent = beanie.title;
+        title.href = `./details/?id=${beanie.id}`;
         swingTag.textContent = beanie.swingTagGeneration;
         tushTag.textContent = beanie.tushTagGeneration;
         birthday.textContent = beanie.birthday;

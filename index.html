@@ -10,11 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
-    <link rel="stylesheet" href="/styles/reset.css" />
-    <link rel="stylesheet" href="/styles/main.css" />
-    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-    <title>Web MVC UI</title>
+    <title>Beanie Baby</title>
 </head>
 
 <body>
@@ -24,8 +24,36 @@
     </header>
 
     <main>
+        <h2>All Beanies</h2>
+        <section id="user-section">
+            <div>
+                <form id="filter">
+                    <input id="title" name="title">
+                    <select name="astro-sign">
+                        <option value="">All Signs</option>
+                        <option value="Pisces">Pisces</option>
+                        <option value="Aries">Aries</option>
+                        <option value="Taurus">Taurus</option>
+                        <option value="Gemini">Gemini</option>
+                        <option value="Cancer">Cancer</option>
+                        <option value="Leo">Leo</option>
+                        <option value="Virgo">Virgo</option>
+                        <option value="Libra">Libra</option>
+                        <option value="Scorpio">Scorpio</option>
+                        <option value="Sagittarius">Sagittarius</option>
+                        <option value="Capircorn">Capircorn</option>
+                        <option value="Aquarius">Aquarius</option>
+                    </select>
+                    <button id="search">CLICK 4 BEANIEZ</button>
+                </form>
+            </div>
+            <div id="paging">
+                <span class="page-info"></span>
+                <button class="page-mani">prev</button>
+                <button class="page-mani">next</button>
+            </div>
+        </section>
         <section>
-            <h2>All Beanies</h2>
             <ul id="beanie-list"></ul>
         </section>
     </main>
